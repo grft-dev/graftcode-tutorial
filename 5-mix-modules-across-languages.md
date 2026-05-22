@@ -41,7 +41,7 @@ Due to a temporary bug currently being fixed, we first check whether the configu
 var config = string.IsNullOrEmpty(Environment.GetEnvironmentVariable("GRAFT_CONFIG")) ?
     "licenseKey=f7GZ-De6k-Mx4p-t7FN-q5DC\nname=graft.pypi.sdncenter_currency_converter;host=inMemory;modules=currency_converter;runtime=python" :
     Environment.GetEnvironmentVariable("GRAFT_CONFIG");
-graft.pypi.sdncenter_currency_converter.GraftConfig.setConfig(config);
+graft.pypi.sdncenter_currency_converter.GraftConfig.SetConfig(config);
 ```
 
 And now, let's add a new method __GetMyCurrentCost()__ that additionally takes a currency argument. Remember to **Save** your file:
